@@ -1,0 +1,28 @@
+// JavaScriptでスタイルを設定する
+const container = document.querySelector('.container');
+container.style.maxWidth = '600px';
+container.style.margin = '20px auto';
+container.style.backgroundColor = '#fff';
+container.style.padding = '20px';
+container.style.borderRadius = '5px';
+container.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+
+const h1 = document.querySelector('h1');
+h1.style.color = '#333';
+
+const ul = document.querySelector('ul');
+ul.style.listStyleType = 'none';
+ul.style.padding = '0';
+
+const li = document.querySelectorAll('li');
+li.forEach(item => {
+  item.style.marginBottom = '5px';
+});
+
+const liBefore = document.querySelectorAll('li::before');
+liBefore.forEach(item => {
+  item.style.content = '"•"';
+  item.style.marginRight = '5px';
+  item.style.color = '#007bff';
+});
+
